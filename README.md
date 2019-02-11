@@ -70,6 +70,9 @@ I want my space to be available to customers until a booking is confirmed
 #### Setup Database
 
 - `createdb MakersBnB` and enter the database environment with `psql MakersBnB`;
+
+- `createdb MakersBnB-test` for test dastabase;
+
 - Run the script documented in `db/migrations/` in `psql`:
 
 ```

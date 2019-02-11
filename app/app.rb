@@ -1,3 +1,4 @@
+ENV['database'] ||= 'MakersBnB'
 require 'sinatra'
 
 class MakersBnB < Sinatra::Base

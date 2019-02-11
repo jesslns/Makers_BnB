@@ -1,4 +1,4 @@
-ENV['ENVIRONMENT'] = 'test'
+ENV['database'] = 'MakersBnB-test'
 require 'simplecov'
 require 'simplecov-console'
 require File.join(File.dirname(__FILE__), '..', './app/app.rb')

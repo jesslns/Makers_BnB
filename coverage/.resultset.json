@@ -1,20 +1,47 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/hello_world_spec.rb": [
+      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/hello_world_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/see_listings_spec.rb": [
+        1,
         null,
         1,
         null,
         1,
         1,
         1,
+        null,
         1,
+        1,
+        null,
+        null
+      ],
+      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/database_helper.rb": [
+        1,
+        6,
+        null,
+        null,
+        1,
+        1,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/space_spec.rb": [
+      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/space_spec.rb": [
         1,
         1,
         null,
@@ -40,27 +67,9 @@
         null,
         1,
         null,
-        null
-      ],
-      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/app/lib/space.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/database_helper.rb": [
-        1,
-        2,
         null
       ]
     },
-    "timestamp": 1549901842
+    "timestamp": 1549906339
   }
 }

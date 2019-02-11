@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-11T17:32:19+00:00">2019-02-11T17:32:19+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-11T23:45:59+00:00">2019-02-11T23:45:59+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.22
+         1.18
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>4</b> files in total.
-    <b>28</b> relevant lines. 
-    <span class="green"><b>28</b> lines covered</span> and
+    <b>5</b> files in total.
+    <b>40</b> relevant lines. 
+    <span class="green"><b>40</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,13 +57,23 @@
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>2.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ac71a02a42861af816b105fd00b2694ab4613b4d" class="src_link" title="spec/features/add_listing_spec.rb">spec/features/add_listing_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#0e014f337a7c571b3e3e25427391b339f96989ca" class="src_link" title="spec/features/hello_world_spec.rb">spec/features/hello_world_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>10</td>
         <td>6</td>
         <td>6</td>
         <td>0</td>
@@ -126,8 +136,8 @@
           <code class="ruby">def database_wiper</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="2">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="2">
+          <span class="hits">7</span>
           
           <code class="ruby">  Space.destroy_all unless ENV[&#39;database&#39;] == &#39;MakersBnB&#39;</code>
         </li>
@@ -181,6 +191,115 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ac71a02a42861af816b105fd00b2694ab4613b4d">
+  <div class="header">
+    <h3>spec/features/add_listing_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;database_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;Homepage adds new places&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  scenario &#39;when the user adds a new place&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit(&#39;/post-space&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in(&#39;spacename&#39;, with: &#39;Makers&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in(&#39;price&#39;, with: &#39;50&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in(&#39;description&#39;, with: &#39;Makers is awesome&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_button(&#39;Submit&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(current_path).to eq(&#39;/&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&#39;Makers&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&#39;awesome&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&#39;50&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
@@ -260,12 +379,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>

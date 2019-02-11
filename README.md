@@ -2,7 +2,7 @@ MakersBnB
 ========
 ```
 o(=(=(=(=)=)=)=)o
- !!!!!!}!{!!!!!!                                                ___ 
+ !!!!!!}!{!!!!!!                                                ___
  !!!!!} | {!!!!!                                               /   \
  !!!!}  |  {!!!!     _!_     ()              ()     _!_       | //  |
  !!!'   |   '!!!    |~@~|    ||______________||    |~@~|      |     |
@@ -45,12 +45,12 @@ so I can provide accurate information
 I would like to name the space, add a description and a price per night
 
 As a space owner
-So I can manage my bookings 
+So I can manage my bookings
 I would like to stop the customer booking an already booked space
 
 As a customer
 So I can make a booking
-I want to be able to send a request 
+I want to be able to send a request
 
 As a space owner
 So I can feel secure about my space
@@ -64,3 +64,24 @@ As a space owner
 So I can advertise my available space
 I want my space to be available to customers until a booking is confirmed
 ```
+
+### Instructions
+
+#### Setup Database
+
+- `createdb MakersBnB` and enter the database environment with `psql MakersBnB`;
+- Run the script documented in `db/migrations/` in `psql`:
+
+```
+DROP TABLE spaces;
+
+CREATE TABLE spaces (
+  id SERIAL PRIMARY KEY,
+  space_name TEXT,
+  description TEXT,
+  price DECIMAL(10, 2)
+);
+```
+
+Note that `psql` will throw an error on `DROP TABLE`
+when you first setup `space` table as the `space` table does not exist.

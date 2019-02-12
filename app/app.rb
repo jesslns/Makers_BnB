@@ -41,6 +41,15 @@ class MakersBnB < Sinatra::Base
     redirect '/'
   end
 
+  post '/session' do
+    access = HashHandler.new.authenticate(
+      "tractorTR10@kul"+params[:password],
+       User.find_by(username: params[:username]).pass_hash)
+    access ? session['user'] = User.find_by(username: params[:username]) : redirect('/')
+    redirect('/')
+    #add sinatra flash for wrong password
+  end
+
   delete '/session' do
     session['user'] = nil
     redirect '/'

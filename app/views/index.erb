@@ -7,6 +7,15 @@
   <title>Makers BnB</title>
 </head>
 <body>
+<% if @user == nil %>
+  <form action="/session" method="POST">
+    <label for="username">username</label>
+    <input name="username" type="text" placeholder="username" />
+    <label for="password">password</label>
+    <input name="password" type="password" placeholder="password" />
+    <button type="submit">Login</button>
+  </form>
+<% end %>
 <% if @user != nil %>
 Hi <%= @user.username %>!<br>
 <% end %>

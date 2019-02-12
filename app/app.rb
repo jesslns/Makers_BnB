@@ -2,8 +2,9 @@ ENV['database'] ||= 'MakersBnB'
 # require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/flash'
-require_relative './lib/space'
-require_relative './lib/user'
+require_relative './lib/space.rb'
+require_relative './lib/user.rb'
+require_relative './lib/hashHandler.rb'
 
 
 class MakersBnB < Sinatra::Base
@@ -35,7 +36,7 @@ class MakersBnB < Sinatra::Base
     session['user'] = User.create(
         username: params[:username],
         email: params[:email],
-        pass_hash: params[:password]
+        pass_hash: HashHandler.new.to_hash("tractorTR10@kul"+params[:password])
     )
     redirect '/'
   end

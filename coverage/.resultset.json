@@ -81,7 +81,6 @@
         null,
         1,
         2,
-        null,
         1,
         1,
         1,
@@ -92,21 +91,6 @@
         1,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/app/lib/hashHandler.rb": [
-        1,
-        null,
-        1,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
-        null,
         null,
         null
       ],
@@ -167,6 +151,6 @@
         null
       ]
     },
-    "timestamp": 1549978203
+    "timestamp": 1549978733
   }
 }

@@ -44,5 +44,10 @@ class MakersBnB < Sinatra::Base
     redirect '/my-spaces'
   end
 
+  delete '/space' do
+    Space.find(params['space_id']).destroy
+    redirect '/my-spaces'
+  end
+
   run! if app_file == $0
 end

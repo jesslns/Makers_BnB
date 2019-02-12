@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/add_listing_spec.rb": [
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/add_listing_spec.rb": [
         1,
         null,
         1,
@@ -18,73 +18,29 @@
         null,
         null
       ],
-      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/database_helper.rb": [
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/database_helper.rb": [
         1,
-        10,
+        12,
         null,
         null,
         1,
-        4,
+        6,
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/delete_space_spec.rb": [
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/delete_space_spec.rb": [
         1,
-        1
-      ],
-      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/hello_world_spec.rb": [
         1,
         null,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/see_listings_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/update_space_spec.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -100,7 +56,72 @@
         null,
         null
       ],
-      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/space_spec.rb": [
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/hello_world_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/see_listings_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/update_space_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/space_spec.rb": [
         1,
         1,
         null,
@@ -129,6 +150,6 @@
         null
       ]
     },
-    "timestamp": 1549991113
+    "timestamp": 1549993053
   }
 }

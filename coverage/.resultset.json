@@ -20,8 +20,8 @@
       ],
       "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/database_helper.rb": [
         1,
-        12,
-        12,
+        15,
+        15,
         null,
         null,
         1,
@@ -73,6 +73,40 @@
         null,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/hashHandler_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/app/lib/hashHandler.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
         null,
         null
       ],
@@ -133,6 +167,6 @@
         null
       ]
     },
-    "timestamp": 1549973863
+    "timestamp": 1549978203
   }
 }

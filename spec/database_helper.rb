@@ -1,5 +1,6 @@
 def database_wiper
   Space.destroy_all unless ENV['database'] == 'MakersBnB'
+  User.destroy_all unless ENV['database'] == 'MakersBnB'
 end
 
 def add_sample_data

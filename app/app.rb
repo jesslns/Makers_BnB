@@ -24,5 +24,13 @@ class MakersBnB < Sinatra::Base
     redirect '/'
   end
 
+  get '/users' do
+    erb :users
+  end
+
+  post '/users' do
+    
+  end
+
   run! if app_file == $0
 end

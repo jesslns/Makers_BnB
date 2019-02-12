@@ -1,15 +1,14 @@
 require_relative '../spec_helper.rb'
+require_relative '../web_helper.rb'
 
 feature 'Register users:' do
 
-  scenario 'Can register a new user' do
-    visit('/')
-    click_button('Register')
-    fill_in('username', with: 'thundercats')
-    fill_in('email', with: 'thundercats@aol.com')
-    fill_in('password', with: 'secretCats')
-    click_button('Submit')
+  before(:each)do
+    database_wiper
+  end
 
+  scenario 'Can register a new user' do
+    auto_register
     expect(page.status_code).to eq(200)
     expect(page).to have_content('Hi thundercats!')
   end

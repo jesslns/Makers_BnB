@@ -34,7 +34,7 @@ ul, li {
   min-width: 80vw;
   color: #4169E1;
   list-style-type: none;
-  text-align: centre;
+  /* text-align: left; */
   /* width: 50%; */
 }
 

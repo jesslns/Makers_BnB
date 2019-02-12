@@ -8,7 +8,7 @@ require_relative './lib/hashHandler.rb'
 
 
 class MakersBnB < Sinatra::Base
-  enable :sessions
+  enable :sessions, :method_override
   get '/' do
     @user = session['user']
     @spaces = Space.all
@@ -34,10 +34,15 @@ class MakersBnB < Sinatra::Base
 
   post '/users' do
     session['user'] = User.create(
-        username: params[:username],
-        email: params[:email],
-        pass_hash: HashHandler.new.to_hash("tractorTR10@kul"+params[:password])
+      username: params[:username],
+      email: params[:email],
+      pass_hash: HashHandler.new.to_hash("tractorTR10@kul"+params[:password])
     )
+    redirect '/'
+  end
+
+  delete '/session' do
+    session['user'] = nil
     redirect '/'
   end
 

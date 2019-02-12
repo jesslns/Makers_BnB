@@ -20,8 +20,8 @@
       ],
       "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/database_helper.rb": [
         1,
-        16,
-        16,
+        18,
+        18,
         null,
         null,
         1,
@@ -44,6 +44,38 @@
         null,
         null
       ],
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/logout_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/web_helper.rb": [
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
       "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/register_user_spec.rb": [
         1,
         1,
@@ -59,17 +91,6 @@
         1,
         1,
         null,
-        null
-      ],
-      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/web_helper.rb": [
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null
       ],
       "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/see_listings_spec.rb": [
@@ -161,6 +182,6 @@
         null
       ]
     },
-    "timestamp": 1549980971
+    "timestamp": 1549981676
   }
 }

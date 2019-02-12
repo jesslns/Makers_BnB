@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/add_listing_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/add_listing_spec.rb": [
         1,
         null,
         1,
@@ -18,7 +18,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/database_helper.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/database_helper.rb": [
         1,
         20,
         20,
@@ -32,7 +32,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/hello_world_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/hello_world_spec.rb": [
         1,
         null,
         1,
@@ -44,7 +44,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/login_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/login_spec.rb": [
         1,
         1,
         null,
@@ -67,7 +67,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/web_helper.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/web_helper.rb": [
         null,
         1,
         3,
@@ -78,7 +78,7 @@
         3,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/logout_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/logout_spec.rb": [
         1,
         1,
         null,
@@ -99,7 +99,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/register_user_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/register_user_spec.rb": [
         1,
         1,
         null,
@@ -116,7 +116,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/features/see_listings_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/features/see_listings_spec.rb": [
         1,
         null,
         1,
@@ -130,7 +130,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/hashHandler_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/hashHandler_spec.rb": [
         1,
         null,
         1,
@@ -148,7 +148,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/space_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/space_spec.rb": [
         1,
         1,
         null,
@@ -176,7 +176,7 @@
         null,
         null
       ],
-      "/Users/punchcafe/Projects/MakersAcademy_Course/2nd_tri/makersbnb/Makers_BnB/spec/user_spec.rb": [
+      "/Users/jessicaleung/Desktop/Learn2Programme/MAKERS_course/Makers_BnB/spec/user_spec.rb": [
         1,
         1,
         null,
@@ -205,6 +205,6 @@
         null
       ]
     },
-    "timestamp": 1549983374
+    "timestamp": 1549988366
   }
 }

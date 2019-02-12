@@ -1,0 +1,50 @@
+body{
+  background-color: lightblue;
+  color: #4169E1;
+  font-family: 'Overpass Mono', monospace;
+  text-align: center;
+  margin: 2%;
+}
+
+form {
+    display: inline;
+}
+
+button {
+  outline:none;
+  height: 30px;
+  text-align: center;
+  width: 100px;
+  border-radius:30px;
+  background: #4169E1;
+  border: 2px solid #fff;
+  color: #fff;
+  letter-spacing:1px;
+  text-shadow:0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+ul, li {
+  margin-top: 15px;
+  margin-left: 0;
+  padding-left: 0;
+  min-width: 80vw;
+  color: #4169E1;
+  list-style-type: none;
+  text-align: centre;
+  /* width: 50%; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 800px;
+  margin: auto;
+}

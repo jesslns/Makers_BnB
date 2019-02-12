@@ -4,40 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <title>Makers BnB</title>
 </head>
 <body>
-<% if @user == nil %>
-  <form action="/session" method="POST">
-    <label for="username">username</label>
-    <input name="username" type="text" placeholder="username" />
-    <label for="password">password</label>
-    <input name="password" type="password" placeholder="password" />
-    <button type="submit">Login</button>
-  </form>
-<% end %>
-<% if @user != nil %>
-Hi <%= @user.username %>!<br>
-<% end %>
-<header>
-  <h1 class="logo">MakersBnB</h1>
-</header>
-<form action="/users" >
-  <button type="submit">Register</button>
-  </form>
-  <form action="/session" method="post">
-    <input type="hidden" name="_method" value='DELETE'>
-    <button type="submit">Logout</button>
-    </form>
-<ul>
-  <% @spaces.each { |space| %>
-    <li>
-      <h3><%= space.space_name %></h3>
-      <p><%= space.description %></p>
-      <p><%= space.price %></p>
-    </li>
-  <% } %>
-</ul>
+  <div class = 'container'>
 
-</body>
-</html>
+    <% if @user == nil %>
+    <form action="/session" method="POST">
+      <label for="username">username</label>
+      <input name="username" type="text" placeholder="username" />
+      <label for="password">password</label>
+      <input name="password" type="password" placeholder="password" />
+      <button type="submit">Login</button>
+    </form>
+    <% end %>
+    <% if @user != nil %>
+    Hi <%= @user.username %>!<br>
+    <% end %>
+
+    <form action="/users" >
+      <button type="submit">Register</button>
+    </form>
+    <form action="/post-space" >
+      <button type="submit">Post Space</button>
+    </form>
+    <form action="/session" method="post">
+      <input type="hidden" name="_method" value='DELETE'>
+      <button type="submit">Logout</button>
+    </form>
+    
+    <header>
+      <h1 class="logo">MakersBnB</h1>
+    </header>
+    <ul>
+      <% @spaces.each { |space| %>
+        <li>
+          <h3><%= space.space_name %></h3>
+          <img src="https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food" alt="">
+          <p>£ <%= space.price %> / night</p>
+          <p>Description: <%= space.description %></p>
+        </li>
+        <% } %>
+      </ul>
+
+    </div>
+
+  </body>
+  </html>

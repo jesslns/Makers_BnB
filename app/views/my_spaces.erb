@@ -17,7 +17,10 @@
         <h3><%= space.space_name %></h3>
         <p><%= space.description %></p>
         <p><%= space.price %></p>
-        <a href="/update-space">Update</a>
+        <form action="/space-editor" method="post">
+        <input type="hidden" name="space_id" value="<%= space.id %>">
+        <input type="submit" name="edit_<%=space.space_name%>" value="edit">
+        </form>
       </li>
     <% } %>
   </ul>

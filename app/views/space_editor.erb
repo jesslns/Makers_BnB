@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Makers BnB</title>
+  </head>
+  <body>
+  <h2>Update this space</h2>
+
+  <form action="/space" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <input type="hidden" name="space_id" value = "<%=@space.id%>">
+    <label for="spacename">Title</label>
+    <input name="spacename" type="text" value="<%=@space.space_name%>" />
+    <label for="price">Price</label>
+    <input name="price" type="text" value= "<%=@space.price%>"/>
+    <label for="description">Description</label>
+    <textarea name="description" value="<%=@space.description%>" ></textarea>
+    <input type="submit" value="Submit" />
+  </form>
+  </body>
+</html>

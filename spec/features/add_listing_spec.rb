@@ -2,7 +2,7 @@ require 'database_helper'
 
 feature 'Homepage adds new places' do
   scenario 'when the user adds a new place' do
-    visit('/post-space')
+    visit('/space-creator')
     fill_in('spacename', with: 'Makers')
     fill_in('price', with: '50')
     fill_in('description', with: 'Makers is awesome')

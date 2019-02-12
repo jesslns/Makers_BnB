@@ -8,22 +8,21 @@ feature 'Space owner can' do
     expect(page.status_code).to eq(200)
   end
 
-  scenario 'go to /my-spaces, click update on a space & go to /update-space' do
+  scenario 'go to /my-spaces, click update on a space & go to a page with that space info' do
     add_sample_data
     visit('/my-spaces')
     expect(page).to have_content('Mookers')
     expect(page).to have_content('Amazeballs')
     expect(page).to have_content('25.0')
-    click_link('Update')
-    expect(current_path).to eq('/update-space')
+    page.find('[name=edit_Mookers]').click
     expect(page.status_code).to eq(200)
   end
 
   scenario 'go to /my-spaces, then to /update-space, make changes and see the changes in /my-spaces' do
     add_sample_data
     visit('/my-spaces')
-    click_link('Update')
-    expect(current_path).to eq('/update-space')
+    page.find('[name=edit_Mookers]').click
+    expect(current_path).to eq('/space-editor')
     expect(page.status_code).to eq(200)
     fill_in('spacename', with: 'Musketeers')
     fill_in('price', with: '111')

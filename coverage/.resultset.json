@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/add_listing_spec.rb": [
+      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/add_listing_spec.rb": [
         1,
         null,
         1,
@@ -18,7 +18,7 @@
         null,
         null
       ],
-      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/database_helper.rb": [
+      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/database_helper.rb": [
         1,
         10,
         null,
@@ -31,7 +31,11 @@
         null,
         null
       ],
-      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/hello_world_spec.rb": [
+      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/delete_space_spec.rb": [
+        1,
+        1
+      ],
+      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/hello_world_spec.rb": [
         1,
         null,
         1,
@@ -43,7 +47,7 @@
         null,
         null
       ],
-      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/see_listings_spec.rb": [
+      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/see_listings_spec.rb": [
         1,
         null,
         1,
@@ -57,7 +61,7 @@
         null,
         null
       ],
-      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/update_and_delete_space_spec.rb": [
+      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/features/update_space_spec.rb": [
         1,
         1,
         null,
@@ -76,7 +80,6 @@
         1,
         1,
         1,
-        1,
         null,
         null,
         1,
@@ -86,18 +89,18 @@
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ],
-      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/space_spec.rb": [
+      "/Users/diptis-halder/Projects/week6-MakersBnB/spec/space_spec.rb": [
         1,
         1,
         null,
@@ -126,6 +129,6 @@
         null
       ]
     },
-    "timestamp": 1549983096
+    "timestamp": 1549991113
   }
 }

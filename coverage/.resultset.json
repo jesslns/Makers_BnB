@@ -1,6 +1,36 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/add_listing_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/database_helper.rb": [
+        1,
+        7,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/features/hello_world_spec.rb": [
         1,
         null,
@@ -10,7 +40,6 @@
         1,
         1,
         1,
-        null,
         null,
         null
       ],
@@ -25,19 +54,6 @@
         null,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/database_helper.rb": [
-        1,
-        6,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
         null,
         null
       ],
@@ -70,6 +86,6 @@
         null
       ]
     },
-    "timestamp": 1549906339
+    "timestamp": 1549928759
   }
 }

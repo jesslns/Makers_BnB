@@ -11,5 +11,18 @@ class MakersBnB < Sinatra::Base
     erb :index
   end
 
+  get '/post-space' do
+    erb :postspace
+  end
+
+  post '/post-space' do
+    Space.create(
+      space_name: params[:spacename],
+      description: params[:description],
+      price: params[:price]
+    )
+    redirect '/'
+  end
+
   run! if app_file == $0
 end

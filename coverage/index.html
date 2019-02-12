@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-11T23:45:59+00:00">2019-02-11T23:45:59+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-12T12:34:07+00:00">2019-02-12T12:34:07+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.18
+         1.19
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>5</b> files in total.
-    <b>40</b> relevant lines. 
-    <span class="green"><b>40</b> lines covered</span> and
+    <b>6</b> files in total.
+    <b>47</b> relevant lines. 
+    <span class="green"><b>47</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,7 +57,7 @@
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>2.5</td>
+        <td>3.0</td>
       </tr>
       
       <tr>
@@ -84,6 +84,16 @@
         <td class="strong"><a href="#c2630f9fb2499e95ff2ade425c2ecd14c822b4ac" class="src_link" title="spec/features/see_listings_spec.rb">spec/features/see_listings_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>12</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#33e85a63fc8aff36e5da84bfccc5864a7e5db0d5" class="src_link" title="spec/features/update_and_delete_space_spec.rb">spec/features/update_and_delete_space_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>13</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -136,8 +146,8 @@
           <code class="ruby">def database_wiper</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="2">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="2">
+          <span class="hits">8</span>
           
           <code class="ruby">  Space.destroy_all unless ENV[&#39;database&#39;] == &#39;MakersBnB&#39;</code>
         </li>
@@ -160,8 +170,8 @@
           <code class="ruby">def add_sample_data</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
           <code class="ruby">  Space.create(</code>
         </li>
@@ -470,6 +480,103 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="33e85a63fc8aff36e5da84bfccc5864a7e5db0d5">
+  <div class="header">
+    <h3>spec/features/update_and_delete_space_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;database_helper&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require_relative &#39;../spec_helper.rb&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;Space owner can go to a page to change a space listing&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  scenario &#39;when he wants to&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    add_sample_data</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit(&#39;/my-spaces&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page.status_code).to eq(200)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    # click_button(&#39;Update&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    # expect(current_path).to eq(&#39;/update-space&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>

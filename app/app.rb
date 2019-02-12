@@ -11,6 +11,11 @@ class MakersBnB < Sinatra::Base
     erb :index
   end
 
+  get '/my-spaces' do
+    @spaces = Space.all
+    erb :my_spaces
+  end
+
   get '/post-space' do
     erb :postspace
   end

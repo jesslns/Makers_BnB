@@ -7,6 +7,9 @@
   <title>Makers BnB</title>
 </head>
 <body>
+<% if @user != nil %>
+Hi <%= @user.username %>!<br>
+<% end %>
 <header>
   <h1 class="logo">MakersBnB</h1>
 </header>

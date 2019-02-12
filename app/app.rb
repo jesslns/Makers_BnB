@@ -3,10 +3,13 @@ ENV['database'] ||= 'MakersBnB'
 require 'sinatra/base'
 require 'sinatra/flash'
 require_relative './lib/space'
+require_relative './lib/user'
 
 
 class MakersBnB < Sinatra::Base
+  enable :sessions
   get '/' do
+    @user = session['user']
     @spaces = Space.all
     erb :index
   end
@@ -29,7 +32,12 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users' do
-    
+    session['user'] = User.create(
+        username: params[:username],
+        email: params[:email],
+        pass_hash: params[:password]
+    )
+    redirect '/'
   end
 
   run! if app_file == $0

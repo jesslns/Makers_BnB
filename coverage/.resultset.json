@@ -20,11 +20,11 @@
       ],
       "/Users/nikhil/Documents/Code/MAKERS/Week_6/Makers_BnB/spec/database_helper.rb": [
         1,
-        8,
+        10,
         null,
         null,
         1,
-        2,
+        4,
         null,
         null,
         null,
@@ -68,6 +68,31 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null
@@ -101,6 +126,6 @@
         null
       ]
     },
-    "timestamp": 1549974847
+    "timestamp": 1549983096
   }
 }

@@ -10,10 +10,11 @@
 <header>
   <h1 class="logo">MakersBnB</h1>
 </header>
+
 <ul>
   <% @spaces.each { |space| %>
     <li>
-      <h3><%= space.name %></h3>
+      <h3><%= space.space_name %></h3>
       <p><%= space.description %></p>
       <p><%= space.price %></p>
     </li>

@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Makers BnB</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Makers BnB</title>
+  </head>
+  
+  <body>
   <header>
     <h1 class="logo">MakersBnB</h1>
   </header>
-  any stribg
-  
-</body>
+  <ul>
+    <% @spaces.each { |space| %>
+      <li>
+        <h3><%= space.space_name %></h3>
+        <p><%= space.description %></p>
+        <p><%= space.price %></p>
+        <a href="/update-space">Update</a>
+      </li>
+    <% } %>
+  </ul>
+
+  </body>
 </html>

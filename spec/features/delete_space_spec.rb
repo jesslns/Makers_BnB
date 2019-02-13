@@ -4,8 +4,8 @@ require_relative '../spec_helper.rb'
 feature 'Space owner can' do
 
   scenario 'go to /my-spaces and delete' do
-    add_sample_data
     auto_register
+    create_space
     visit('/my-spaces')
     expect(page).to have_content('Mookers')
     expect(page).to have_content('Amazeballs')

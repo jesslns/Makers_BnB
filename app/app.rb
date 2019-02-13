@@ -17,7 +17,7 @@ class MakersBnB < Sinatra::Base
 
   get '/my-spaces' do
     bootAnon
-    @spaces = Space.all
+    @spaces = Space.where(owner_id: session['user'].id)
     erb :my_spaces
   end
 
@@ -85,7 +85,7 @@ class MakersBnB < Sinatra::Base
     end
     redirect '/my-spaces'
   end
-  
+
   delete '/space' do
     Space.find(params['space_id']).destroy
     redirect '/my-spaces'

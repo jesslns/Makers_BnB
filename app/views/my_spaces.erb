@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Makers BnB</title>
+  </head>
+
+  <body>
+  <header>
+    <h1 class="logo">MakersBnB</h1>
+  </header>
+  <ul>
+    <% @spaces.each { |space| %>
+      <li>
+        <h3><%= space.space_name %></h3>
+        <p><%= space.description %></p>
+        <p><%= space.price %></p>
+        <form action="/space-editor" method="post">
+        <input type="hidden" name="space_id" value="<%= space.id %>">
+        <input type="submit" name="edit_<%=space.space_name%>" value="edit">
+        </form>
+        <form action="/space" method="post">
+        <input type="hidden" name="space_id" value="<%= space.id %>">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" name="del_<%=space.space_name%>" value="x">
+        </form>
+      </li>
+    <% } %>
+  </ul>
+
+  </body>
+</html>

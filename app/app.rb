@@ -15,11 +15,21 @@ class MakersBnB < Sinatra::Base
     erb :index
   end
 
-  get '/post-space' do
-    erb :postspace
+  get '/my-spaces' do
+    @spaces = Space.all
+    erb :my_spaces
   end
 
-  post '/post-space' do
+  get '/space-creator' do
+    erb :space_creator
+  end
+
+  post '/space-editor' do
+    @space = Space.find(params[:space_id])
+    erb :space_editor
+  end
+
+  post '/space' do
     Space.create(
       space_name: params[:spacename],
       description: params[:description],
@@ -53,6 +63,20 @@ class MakersBnB < Sinatra::Base
   delete '/session' do
     session['user'] = nil
     redirect '/'
+  end
+
+  put '/space' do
+    Space.find(params['space_id']).update(
+      space_name: params[:spacename],
+      description: params[:description],
+      price: params[:price]
+    )
+    redirect '/my-spaces'
+  end
+
+  delete '/space' do
+    Space.find(params['space_id']).destroy
+    redirect '/my-spaces'
   end
 
   run! if app_file == $0

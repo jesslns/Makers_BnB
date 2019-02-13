@@ -41,7 +41,8 @@ class MakersBnB < Sinatra::Base
     Space.create(
       space_name: params[:spacename],
       description: params[:description],
-      price: params[:price]
+      price: params[:price],
+      owner_id: session['user'].id
     )
     redirect '/'
   end
@@ -74,14 +75,17 @@ class MakersBnB < Sinatra::Base
   end
 
   put '/space' do
-    Space.find(params['space_id']).update(
-      space_name: params[:spacename],
-      description: params[:description],
-      price: params[:price]
-    )
+    space = Space.find(params['space_id'])
+    if space.owner_id == session['user'].id
+      space.update(
+        space_name: params[:spacename],
+        description: params[:description],
+        price: params[:price]
+      )
+    end
     redirect '/my-spaces'
   end
-
+  
   delete '/space' do
     Space.find(params['space_id']).destroy
     redirect '/my-spaces'

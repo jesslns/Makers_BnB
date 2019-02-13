@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Makers BnB</title>
   </head>
 
@@ -11,24 +12,35 @@
   <header>
     <h1 class="logo">MakersBnB</h1>
   </header>
+  <form action="/" >
+    <button type="submit">Home Page</button>
+  </form>
+  <form action="/space-creator" >
+    <button type="submit">Post Space</button>
+  </form>
+
+  <h1>My Spaces</h1>
+  <div class="container">
   <ul>
     <% @spaces.each { |space| %>
       <li>
         <h3><%= space.space_name %></h3>
+        <p>£ <%= space.price %> / night</p>
+        <img src="/img/banner-2.png" alt="">
         <p><%= space.description %></p>
-        <p><%= space.price %></p>
         <form action="/space-editor" method="post">
         <input type="hidden" name="space_id" value="<%= space.id %>">
-        <input type="submit" name="edit_<%=space.space_name%>" value="edit">
+        <input type="submit" name="edit_<%=space.space_name%>" value="Edit">
         </form>
         <form action="/space" method="post">
         <input type="hidden" name="space_id" value="<%= space.id %>">
         <input type="hidden" name="_method" value="DELETE">
-        <input type="submit" name="del_<%=space.space_name%>" value="x">
+        <input type="submit" name="del_<%=space.space_name%>" value="Delete">
         </form>
       </li>
     <% } %>
   </ul>
+  </div>
 
   </body>
 </html>

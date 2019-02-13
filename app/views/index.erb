@@ -9,6 +9,9 @@
 </head>
 <body>
   <% if @user == nil %>
+  <form action="/users" >
+    <button type="submit">Register</button>
+  </form>
   <form action="/session" method="POST">
     <label for="username">username</label>
     <input name="username" type="text" placeholder="username" />
@@ -18,37 +21,34 @@
   </form>
   <% end %>
   <% if @user != nil %>
-  Hi <%= @user.username %>!<br>
-  <% end %>
-  <br>
-  <form action="/users" >
-    <button type="submit">Register</button>
-  </form>
-  <form action="/post-space" >
-    <button type="submit">Post Space</button>
-  </form>
+  Hi <%= @user.username %>!
+<br>
+<form action="/my-spaces" >
+  <button type="submit">My Spaces</button>
+</form>
+
   <form action="/session" method="post">
     <input type="hidden" name="_method" value='DELETE'>
     <button type="submit">Logout</button>
   </form>
-
-  <div class = 'container'>
+  <% end %>
+  <br>
 
     <header>
       <h1 class="logo">MakersBnB</h1>
     </header>
     <ul>
       <% @spaces.each { |space| %>
+          <div class = 'space-container'>
         <li>
           <h3><%= space.space_name %></h3>
             <p>£ <%= space.price %> / night</p>
           <img src="https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food" alt="">
           <p>Description: <%= space.description %></p>
         </li>
+          </div>
         <% } %>
       </ul>
-
-    </div>
 
   </body>
   </html>

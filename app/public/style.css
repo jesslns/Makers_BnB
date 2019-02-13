@@ -4,8 +4,8 @@
 }
 
 body{
-  background-color: lightblue;
-  color: #4169E1;
+  background-color: white;
+  color: black;
   font-family: 'Overpass Mono', monospace;
   text-align: center;
   margin: 0;
@@ -56,6 +56,7 @@ ul, li {
 }
 
 #navbar {
+  border-bottom: 1px solid lightgray;
   align: center;
   position: fixed;
   width: 100%;
@@ -68,15 +69,94 @@ ul, li {
   display: inline-block;
   text-align: left;
   position: static;
-  width: 800px;
+  width: 1000px;
   height: 100%;
   background-color: white;
 }
 
 #navbar .contentholder .logo {
   display: inline-block;
-  align: left;
+  width: 200px;
+  text-align: left;
   background-color: white;
+}
+
+#navbar .contentholder #space {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+
+}
+
+#navbar .contentholder .controlpanel {
+  width: 500px;
+  background-color: blue;
+  display: inline-block;
+  text-align: right;
+  color: #5D6D7E;
+  background-color: white;
+}
+
+#navbar .contentholder .controlpanel .inputs{
+  text-align: center;
+  font-style: italic;
+  height: 20px;
+  width: 120px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+#navbar .contentholder .controlpanel .buttons{
+  padding: 1px;
+  height: 25px;
+  border-bottom: 1px solid #5D6D7E;
+  border-radius: 1px;
+  background-color: white;
+  color: #5D6D7E;
+}
+
+#navbar .contentholder .controlpanel .buttons:hover{
+  height: 25px;
+  border-radius: 1px;
+  border: 1px solid #283747;
+  background-color: white;
+  color: #283747;
+}
+
+#navbar .contentholder .controlpanel #logout{
+  height: 25px;
+  border-bottom: 1px solid #C2185B;
+}
+
+#navbar .contentholder .controlpanel #logout:hover{
+  height: 25px;
+  border-radius: 1px;
+  border: 1px solid #C2185B;
+  background-color: #C2185B;
+  color: white;
+}
+
+#navbar .contentholder .controlpanel #register{
+  height: 25px;
+  border-radius: 1px;
+  border-bottom: 1px solid #FF5733;
+  background-color: white;
+  color: #5D6D7E;
+}
+
+#navbar .contentholder .controlpanel #register:hover{
+  height: 25px;
+  border-radius: 1px;
+  border: 1px solid #FF5733;
+  background-color: #FF5733;
+  color: white;
+}
+
+#navbar .contentholder .userstatus{
+  font-family: 'Lucida Grande';
+  display: inline-block;
+  width: 100px;
+  height: 60px;
 }
 
 #navoffset {

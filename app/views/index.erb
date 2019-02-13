@@ -11,28 +11,35 @@
 <div id="navbar">
   <div class="contentholder">
   <div class="logo">
-  <a href="/"><image src="img/logo.png" height="60px"/></a>
+    <a href="/"><image src="img/logo.png" height="60px"/></a>
   </div>
-  <% if @user == nil %>
-  <form action="/session" method="POST">
-    <input name="username" type="text" placeholder="username" />
-    <input name="password" type="password" placeholder="password" />
-    <button type="submit">Login</button>
-  </form>
-  <% end %>
-  <% if @user != nil %>
-  Hi <%= @user.username %>!
-  <form action="/my-spaces">
-    <button type="submit">My Spaces</button>
-  </form>
-  <% end %>
-  <form action="/users" >
-    <button type="submit">Register</button>
-  </form>
-  <form action="/session" method="post">
-    <input type="hidden" name="_method" value='DELETE'>
-    <button type="submit">Logout</button>
-  </form>
+  <span id="space">
+  </span>
+  <div class="controlpanel">
+    <% if @user == nil %>
+    <form action="/session" method="POST">
+      <input name="username" class="inputs" type="text" placeholder="username" />
+      <input name="password" class="inputs" type="password" placeholder="password" />
+      <button type="submit" class="buttons">Login</button>
+    </form>
+    <form action="/users" >
+      <button type="submit" id="register">Register</button>
+    </form>
+    <% end %>
+    <% if @user != nil %>
+    <form action="/my-spaces">
+      <button type="submit" class="buttons">My Spaces</button>
+    </form>
+    <div class="userstatus">
+      <small><small><i>signed in as</i></small></small><br>
+    <big><big><%= @user.username %></big></big>
+    <form action="/session" method="post">
+      <input type="hidden" name="_method" value='DELETE'>
+      <button type="submit" class="buttons" id="logout">Logout</button>
+    </form>
+    </div>
+    <% end %>
+  </div>
   </div>
 </div>
 <div id="navoffset"></div>

@@ -10,6 +10,6 @@ feature 'Register users:' do
   scenario 'Can register a new user' do
     auto_register
     expect(page.status_code).to eq(200)
-    expect(page).to have_content('Hi thundercats!')
+    expect(page).to have_content('signed in as thundercats')
   end
 end

@@ -12,6 +12,9 @@
     <h1 class="logo">MakersBnB</h1>
   </header>
   <ul>
+    <form action="/space-creator" >
+      <button type="submit">Post Space</button>
+    </form>
     <% @spaces.each { |space| %>
       <li>
         <h3><%= space.space_name %></h3>

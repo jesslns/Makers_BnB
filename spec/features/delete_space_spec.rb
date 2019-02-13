@@ -3,12 +3,9 @@ require_relative '../spec_helper.rb'
 
 feature 'Space owner can' do
 
-  scenario 'go to /my-spaces, click update on a space & go to a page with that space info' do
-    add_sample_data
-  end
-
-  scenario 'go to /my-spaces, then to /update-space, make changes and see the changes in /my-spaces' do
-    add_sample_data
+  scenario 'go to /my-spaces and delete' do
+    auto_register
+    create_space
     visit('/my-spaces')
     expect(page).to have_content('Mookers')
     expect(page).to have_content('Amazeballs')

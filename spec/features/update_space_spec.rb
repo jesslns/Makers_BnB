@@ -1,15 +1,19 @@
 require 'database_helper'
+require 'web_helper'
 require_relative '../spec_helper.rb'
 
 feature 'Space owner can' do
+  before(:each) do
+    database_wiper
+    auto_register
+  end
   scenario 'go to /my-spaces' do
-    add_sample_data
     visit('/my-spaces')
     expect(page.status_code).to eq(200)
   end
 
   scenario 'go to /my-spaces, click update on a space & go to a page with that space info' do
-    add_sample_data
+    create_space
     visit('/my-spaces')
     expect(page).to have_content('Mookers')
     expect(page).to have_content('Amazeballs')
@@ -19,7 +23,7 @@ feature 'Space owner can' do
   end
 
   scenario 'go to /my-spaces, then to /update-space, make changes and see the changes in /my-spaces' do
-    add_sample_data
+    create_space
     visit('/my-spaces')
     page.find('[name=edit_Mookers]').click
     expect(current_path).to eq('/space-editor')

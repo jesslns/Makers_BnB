@@ -40,7 +40,7 @@ describe Space do
         description:"Awesome",
         price: 25.00,
         owner_id: 9999
-        #test may not work on brand new testing database
+        #test may not work on full testing databases
       )
     }.to raise_error()
   end

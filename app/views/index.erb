@@ -19,13 +19,12 @@
   <% end %>
   <% if @user != nil %>
   Hi <%= @user.username %>!<br>
+  <form action="/my-spaces">
+    <button type="submit">My Spaces</button>
+  </form>
   <% end %>
-  <br>
   <form action="/users" >
     <button type="submit">Register</button>
-  </form>
-  <form action="/space-creator" >
-    <button type="submit">Post Space</button>
   </form>
   <form action="/session" method="post">
     <input type="hidden" name="_method" value='DELETE'>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Makers BnB</title>
   </head>
   <body>
@@ -16,8 +17,11 @@
     <input name="spacename" type="text" value="<%=@space.space_name%>" />
     <label for="price">Price</label>
     <input name="price" type="text" value= "<%=@space.price%>"/>
+    <br> <br>
     <label for="description">Description</label>
-    <textarea name="description" value="<%=@space.description%>" ></textarea>
+    <br>
+    <textarea rows="10" cols="100" name="description" value="<%=@space.description%>" ></textarea>
+    <br>
     <input type="submit" value="Submit" />
   </form>
   </body>

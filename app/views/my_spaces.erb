@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Makers BnB</title>
   </head>
 
@@ -16,20 +17,22 @@
       <button type="submit">Post Space</button>
     </form>
     <% @spaces.each { |space| %>
+      <div class = 'container'>
       <li>
         <h3><%= space.space_name %></h3>
+        <p>£ <%= space.price %>/night</p>
         <p><%= space.description %></p>
-        <p><%= space.price %></p>
         <form action="/space-editor" method="post">
         <input type="hidden" name="space_id" value="<%= space.id %>">
-        <input type="submit" name="edit_<%=space.space_name%>" value="edit">
+        <input type="submit" name="edit_<%=space.space_name%>" value="Edit">
         </form>
         <form action="/space" method="post">
         <input type="hidden" name="space_id" value="<%= space.id %>">
         <input type="hidden" name="_method" value="DELETE">
-        <input type="submit" name="del_<%=space.space_name%>" value="x">
+        <input type="submit" name="del_<%=space.space_name%>" value="Delete">
         </form>
       </li>
+      </div>
     <% } %>
   </ul>
 

@@ -5,8 +5,8 @@
 
 body{
   background-color: white;
-  color: black;
-  font-family: 'Overpass Mono', monospace;
+  color: #263238;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ ul, li {
   margin-left: 0;
   padding-left: 0;
   min-width: 80vw;
-  color: #4169E1;
+  color: #263238;
   list-style-type: none;
   /* text-align: left; */
   /* width: 50%; */
@@ -77,6 +77,7 @@ ul, li {
 #navbar .contentholder .logo {
   display: inline-block;
   width: 200px;
+  height: 70px;
   text-align: left;
   background-color: white;
 }
@@ -153,7 +154,7 @@ ul, li {
 }
 
 #navbar .contentholder .userstatus{
-  font-family: 'Lucida Grande';
+  font-family: 'Roboto', sans-serif;
   display: inline-block;
   width: 100px;
   height: 60px;

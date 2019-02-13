@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-color: lightblue;
   color: #4169E1;
   font-family: 'Overpass Mono', monospace;
   text-align: center;
-  margin: 2%;
+  margin: 0;
+  padding: 0;
 }
 
 form {
@@ -47,4 +53,32 @@ ul, li {
   background: rgba(255, 255, 255, 0.7);
   max-width: 800px;
   margin: auto;
+}
+
+#navbar {
+  align: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  color: black;
+  height: 80px;
+}
+
+#navbar .contentholder {
+  display: inline-block;
+  text-align: left;
+  position: static;
+  width: 800px;
+  height: 100%;
+  background-color: white;
+}
+
+#navbar .contentholder .logo {
+  display: inline-block;
+  align: left;
+  background-color: white;
+}
+
+#navoffset {
+  height: 80px;
 }

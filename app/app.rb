@@ -5,7 +5,7 @@ require 'sinatra/flash'
 require_relative './lib/space.rb'
 require_relative './lib/user.rb'
 require_relative './lib/hashHandler.rb'
-
+require_relative './lib/anonymousHandler.rb'
 
 class MakersBnB < Sinatra::Base
   enable :sessions, :method_override
@@ -16,20 +16,28 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/my-spaces' do
+    bootAnon
     @spaces = Space.all
     erb :my_spaces
   end
 
   get '/space-creator' do
+    bootAnon
     erb :space_creator
   end
 
+  get '/space-editor' do
+    bootAnon
+  end
+
   post '/space-editor' do
+    bootAnon
     @space = Space.find(params[:space_id])
     erb :space_editor
   end
 
   post '/space' do
+    bootAnon
     Space.create(
       space_name: params[:spacename],
       description: params[:description],

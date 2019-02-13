@@ -2,6 +2,10 @@ require 'database_helper'
 require_relative '../spec_helper.rb'
 
 feature 'Space owner can' do
+  before(:each) do
+    auto_register
+    database_wiper
+  end
   scenario 'go to /my-spaces' do
     add_sample_data
     visit('/my-spaces')

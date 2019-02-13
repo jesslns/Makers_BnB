@@ -10,8 +10,11 @@ feature 'anonymous (not logged in) users cannot access space creation tools' do
 
   scenario 'users who try to browser access are re-driected' do
     visit('/my-spaces')
+    expect(page).to have_current_path('/')
     visit('/space-creator')
+    expect(page).to have_current_path('/')
     visit('/space-editor')
+    expect(page).to have_current_path('/')
   end
 
 

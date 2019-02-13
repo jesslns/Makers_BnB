@@ -27,7 +27,7 @@ _!!!_________!!!___|_____|_ %%%%%%%%%%%%%%%%%%%% _|_____|___|____-____|_
 ```
 Objective
 ------
-To make an AirBnB clone.
+To make a clone of the AirBnB website that meets the following user stories. 
 
 Headline User Stories
 --------
@@ -65,9 +65,15 @@ So I can advertise my available space
 I want my space to be available to customers until a booking is confirmed
 ```
 
-### Instructions
+Instructions
+-------------
 
-#### Setup Database
+#### 1. Clone / Fork the repo
+
+- `git clone https://github.com/jesslns/Makers_BnB.git`
+- `cd Makers_BnB`
+
+#### 2. Setup Database
 
 - `createdb MakersBnB` and enter the database environment with `psql MakersBnB`;
 
@@ -88,3 +94,16 @@ CREATE TABLE spaces (
 
 Note that `psql` will throw an error on `DROP TABLE`
 when you first setup `space` table as the `space` table does not exist.
+
+#### 3. Testing
+
+This project uses **RSpec** for running tests, along with **Capybara** for running feature tests. 
+
+**To run tests:** `rspec` in the terminal.
+
+Approach
+---------
+
+#### Business Logic model
+
+[![Model.jpg](https://i.postimg.cc/dVH1TCFz/Model.jpg)](https://postimg.cc/k2S90BBc)

@@ -16,3 +16,11 @@ def register(name)
   fill_in('password', with: 'secretCats')
   click_button('Submit')
 end
+
+def create_space()
+  visit('/space-creator')
+  fill_in('spacename', with: 'Mookers')
+  fill_in('price', with: '25.0')
+  fill_in('description', with: 'Amazeballs')
+  click_button('Submit')
+end

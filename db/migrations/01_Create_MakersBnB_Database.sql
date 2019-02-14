@@ -17,3 +17,12 @@ CREATE TABLE spaces (
   owner_id INTEGER,
   FOREIGN KEY (owner_id) REFERENCES users (id)
 );
+
+CREATE TABLE bookings (
+  id SERIAL PRIMARY KEY,
+  space_id INTEGER,
+  FOREIGN KEY (space_id) REFERENCES spaces (id),
+  user_id INTEGER,
+  FOREIGN KEY (user_id) REFERENCES users (id),
+  booking_date DATE NOT NULL
+);

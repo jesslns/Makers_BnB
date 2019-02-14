@@ -19,10 +19,19 @@ before(:each) do
 end
   it 'can make a booking'do
   booking = Booking.new(
-    user_id: 1,
-    space_id: 1,
+    user_id: User.find_by(username: "MakersPerson").id,
+    space_id: Space.find_by(space_name: "Makers").id,
     booking_date: Time.parse("14/02/2019")
   )
+end
+
+  it 'can persist a booking object' do
+    new_table_row = Booking.create(
+      user_id: User.find_by(username: "MakersPerson").id,
+      space_id: Space.find_by(space_name: "Makers").id,
+      booking_date: Time.parse("14/02/2019")
+    )
+    expect(Booking.all).to include(new_table_row)
 end
 
 end

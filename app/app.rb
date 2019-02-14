@@ -17,21 +17,25 @@ class MakersBnB < Sinatra::Base
 
   get '/my-spaces' do
     bootAnon
+    @user = session['user']
     @spaces = Space.where(owner_id: session['user'].id)
     erb :my_spaces
   end
 
   get '/space-creator' do
     bootAnon
+    @user = session['user']
     erb :space_creator
   end
 
   get '/space-editor' do
     bootAnon
+    @user = session['user']
   end
 
   post '/space-editor' do
     bootAnon
+    @user = session['user']
     @space = Space.find(params[:space_id])
     erb :space_editor
   end

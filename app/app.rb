@@ -57,9 +57,9 @@ class MakersBnB < Sinatra::Base
 
   post '/users' do
     session['user'] = User.create(
-      username: params[:username],
-      email: params[:email],
-      pass_hash: HashHandler.new.to_hash("tractorTR10@kul"+params[:password])
+      username: params[:register_username],
+      email: params[:register_email],
+      pass_hash: HashHandler.new.to_hash("tractorTR10@kul"+params[:register_password])
     )
     redirect '/'
   end

@@ -1,6 +1,8 @@
+TRUNCATE users, spaces, bookings RESTART IDENTITY;
+
 DROP TABLE spaces;
 DROP TABLE users;
-
+DROP TABLE bookings;
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,

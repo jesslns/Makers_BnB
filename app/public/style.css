@@ -56,6 +56,7 @@ ul, li {
 }
 
 #navbar {
+  z-index: 1;
   border-bottom: 1px solid lightgray;
   align: center;
   position: fixed;
@@ -162,4 +163,60 @@ ul, li {
 
 #navoffset {
   height: 80px;
+}
+
+#splashimage{
+  background-image: url("img/Log_Homes_Heading_1.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+
+}
+
+#splashtext{
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+
+#splashtext h1, p {
+  text-align: left;
+  position: relative;
+  top: 340px;
+  left: 50px;
+  color: white;
+
+}
+
+#splashcover{
+  margin: 0px;
+  padding: 0px;
+  width: 59%;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#splashcover div{
+  position: relative;
+  top: 430px; left: 200px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #FFAB91;
+  height: 70px;
+  width: 400px;
+}
+
+#splashcover div h3{
+  color: white;
+}
+
+#splashcover div:hover{
+  top: 30px; left: 200px;
+  background-image: linear-gradient(#FFAB91,#FF5722);
+  height: 470px;
 }

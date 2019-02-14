@@ -350,3 +350,57 @@ hr {
   transition: 0.5s;
 
 }
+
+#create_space {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: auto;
+  padding: 0;
+  margin: 0;
+
+  width: 61px;
+  height: 61px;
+  background-color: black;
+}
+
+#create_space .plus{
+  position: relative;
+  bottom: 4px;
+  left: 14px;
+  font-size: 49px;
+  display: inline;
+  opacity: 1;
+
+}
+
+#create_space .non_plus{
+
+  position: relative;
+  bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  display: inline;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+#create_space:hover .plus{
+  visibility: hidden;
+}
+
+#create_space:hover .non_plus{
+  font-style: bold;
+  transition: 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#create_space:hover {
+  transition: 0.2s;
+  width: 400px;
+  height: 60px;
+  background-color: #FF5733;
+}

@@ -12,7 +12,7 @@
   <%= erb(:navbar) %>
   <ul>
     <form action="/space-creator" >
-      <button type="submit">Post Space</button>
+      <button id="create_space" type="submit"><div class="plus">+</div><div class="non_plus">create a space</div></button>
     </form>
     <br>
     <% @spaces.each { |space| %>
@@ -39,6 +39,12 @@
             <input type="submit" class="delete_space" name="del_<%=space.space_name%>" value="Delete">
             </form>
           </div>
+        </div>
+        <div class="space-bookings">
+          12/5/2019 Jezzaboi confirmed
+        </div>
+        <div class="space-requests">
+          12/4/2019 Kezzaboi greentick redx
         </div>
       </div>
     <% } %>

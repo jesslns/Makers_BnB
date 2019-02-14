@@ -45,6 +45,10 @@
             <p>£ <%= space.price %> / night</p>
           <img src="https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food" alt="">
           <p>Description: <%= space.description %></p>
+          <form action="/booking" method="post">
+            Booking Date: <input type="text" name="booking_date"/>
+            <button type="submit">Book</button>
+            </form>
         </li>
 
         </div>

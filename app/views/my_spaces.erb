@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Makers BnB</title>
   </head>
 
   <body>
   <%= erb(:navbar) %>
-  <header>
-    <h1 class="logo">MakersBnB</h1>
-  </header>
   <ul>
     <form action="/space-creator" >
       <button type="submit">Post Space</button>
     </form>
+    <br>
     <% @spaces.each { |space| %>
-      <li>
-        <h3><%= space.space_name %></h3>
-        <p><%= space.description %></p>
-        <p><%= space.price %></p>
-        <form action="/space-editor" method="post">
-        <input type="hidden" name="space_id" value="<%= space.id %>">
-        <input type="submit" name="edit_<%=space.space_name%>" value="edit">
-        </form>
-        <form action="/space" method="post">
-        <input type="hidden" name="space_id" value="<%= space.id %>">
-        <input type="hidden" name="_method" value="DELETE">
-        <input type="submit" name="del_<%=space.space_name%>" value="x">
-        </form>
-      </li>
+      <div class="myspace">
+        <div class="space_header">
+          <div class="space_image">
+          </div>
+          <div class="space_info">
+            <div>
+              <h2><%= space.space_name %></h2>
+              <hr align="left" width="66%"/>
+              <i><%= space.description %></i><br>
+              £<%= space.price %>/ night
+            </div>
+          </div>
+          <div class="edit_panel">
+            <form action="/space-editor" method="post">
+            <input type="hidden" name="space_id" value="<%= space.id %>">
+            <input type="submit" class="edit_space" name="edit_<%=space.space_name%>" value="Edit">
+            </form>
+            <form action="/space" method="post">
+            <input type="hidden" name="space_id" value="<%= space.id %>">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" class="delete_space" name="del_<%=space.space_name%>" value="Delete">
+            </form>
+          </div>
+        </div>
+      </div>
     <% } %>
   </ul>
 

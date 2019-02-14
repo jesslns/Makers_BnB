@@ -118,6 +118,7 @@ ul, li {
 }
 
 #navbar .contentholder .controlpanel .buttons:hover{
+  transition: 0.2s;
   height: 25px;
   border-radius: 1px;
   border: 1px solid #283747;
@@ -131,8 +132,9 @@ ul, li {
 }
 
 #navbar .contentholder .controlpanel #logout:hover{
+  transition: 0.2s;
   height: 25px;
-  border-radius: 1px;
+  border-radius: 0px;
   border: 1px solid #C2185B;
   background-color: #C2185B;
   color: white;
@@ -147,6 +149,7 @@ ul, li {
 }
 
 #navbar .contentholder .controlpanel #register:hover{
+  transition: 0.2s;
   height: 25px;
   border-radius: 1px;
   border: 1px solid #FF5733;
@@ -216,7 +219,134 @@ ul, li {
 }
 
 #splashcover div:hover{
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.02, 1.36, 1, 1);
   top: 30px; left: 200px;
   background-image: linear-gradient(#FFAB91,#FF5722);
   height: 470px;
+}
+
+.myspace {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: bottom;
+  margin: 15px;
+  display: inline-block;
+  width: 70%;
+  min-width: 800px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
+.myspace .space_header {
+  height: 100px;
+}
+
+.myspace .space_header .space_info {
+  float: left;
+  position: relative;
+  vertical-align: bottom;
+  height: 100px;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+
+.myspace .space_header .space_image{
+  margin-left: 25px;
+  float:left;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 15%;
+  background-image: url("https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food");
+  background-size: cover;
+}
+
+.myspace .space_header .edit_panel{
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  float: right;
+  background-color: white;
+}
+
+.myspace .space_header .edit_panel .edit_space{
+  padding: 1px;
+  height: 25px;
+  width: 40px;
+  border: 0px;
+  border-bottom: 1px solid #5D6D7E;
+  border-radius: 1px;
+  background-color: white;
+  color: #5D6D7E;
+}
+.myspace .space_header .edit_panel .edit_space:hover{
+  transition: 0.2s;
+  height: 24px;
+  border-radius: 1px;
+  border: 1px solid #283747;
+  background-color: white;
+  color: #283747;
+}
+
+.myspace .space_header .edit_panel .delete_space{
+  padding: 1px;
+  height: 25px;
+  width: 40px;
+  border: 0px;
+  border-bottom: 1px solid red;
+  border-radius: 1px;
+  background-color: white;
+  color: red;
+}
+
+.myspace .space_header .edit_panel .delete_space:hover{
+  padding: 1px;
+  height: 25px;
+  width: 40px;
+  border: 0px;
+  border-bottom: 1px solid red;
+  border-radius: 1px;
+  background-color: red;
+  color: white;
+}
+
+
+
+.myspace .space_info div{
+  margin-left: 15px;
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 150;
+}
+
+.myspace .space_info div i{
+  color: #5D6D7E;
+}
+
+hr {
+  border: solid 0.5px lightgray;
+}
+
+
+.myspace:hover {
+  transition: 0.3s;
+  margin: 15px;
+  display: inline-block;
+  width: 70%;
+  min-width: 800px;
+  border-radius: 15px;
+  border: 1px solid #5D6D7E;
+}
+
+.myspace:hover .space_header .edit_panel{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+
 }

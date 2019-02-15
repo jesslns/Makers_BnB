@@ -101,12 +101,17 @@ class MakersBnB < Sinatra::Base
       space_id: @space_id,
       booking_date: params[:booking_date]
     )
+    # Request.create()
     redirect('/my-bookings')
   end
 
   get '/my-bookings' do
     bootAnon
     @bookings = Booking.where(user_id: session['user'].id)
+    # @booking_and_name = []
+    # @bookings.each{|x|
+    #   @booking_and_name << {booking: x, name: Space.find(x.sapce_id).space_name}
+    # }
     erb :my_bookings
   end
 

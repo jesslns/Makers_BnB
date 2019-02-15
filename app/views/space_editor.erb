@@ -9,18 +9,45 @@
   </head>
   <body>
   <%= erb(:navbar) %>
-  <h2>Update this space</h2>
+    <div style="height: 30px;"></div>
+    <div class="write_space" align="center">
+      <div class="title">
+        <h1> edit your space </h1>
+      </div>
+      <form action="/space" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <input type="hidden" name="space_id" value = "<%=@space.id%>">
+        <div class="space_name_holder">
+          <div class="contents">
+            <h3>space name</h3>
+            <input name="spacename" type="text" value="<%=@space.space_name%>" class="input_field"/>
+            <hr>
+          </div>
+        </div>
+        <div class="price_holder">
+          <div class="contents">
+            <h3>price<small><small><small>per person per night</small></small></small></small></small></h3>
+            <input name="price" type="text" value= "<%=@space.price%>" class="input_field"/>
+            <hr class="price_bar">
+          </div>
+        </div>
+        <br>
+        <!-- <label for="description">Description</label> -->
+        <br>
+        <div class="description_holder">
+          <div class="contents">
+            <h3> space description </h3>
+            <br><textarea class="space_description" name="description" value="<%=@space.description%>" ></textarea>
+          </div>
+        </div>
+        <div class="submit_holder">
+          <!-- <input type="submit" value="Submit" /> -->
+          <br>
+          <button type = "submit" class="submit_space">Submit</button>
+        </div>
+      </form>
+    </div>
 
-  <form action="/space" method="post">
-    <input type="hidden" name="_method" value="PUT">
-    <input type="hidden" name="space_id" value = "<%=@space.id%>">
-    <label for="spacename">Title</label>
-    <input name="spacename" type="text" value="<%=@space.space_name%>" />
-    <label for="price">Price</label>
-    <input name="price" type="text" value= "<%=@space.price%>"/>
-    <label for="description">Description</label>
-    <textarea name="description" value="<%=@space.description%>" ></textarea>
-    <input type="submit" value="Submit" />
-  </form>
+
   </body>
-</html>
+  </html>

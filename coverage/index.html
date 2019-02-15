@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-14T16:08:03+00:00">2019-02-14T16:08:03+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-15T14:14:15+00:00">2019-02-15T14:14:15+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.66
+         1.67
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>18</b> files in total.
-    <b>253</b> relevant lines. 
-    <span class="green"><b>253</b> lines covered</span> and
+    <b>17</b> files in total.
+    <b>249</b> relevant lines. 
+    <span class="green"><b>249</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,19 +51,9 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#e13d727152dd3514865544dc04e0917273601b3e" class="src_link" title="app/lib/booking.rb">app/lib/booking.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>11</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#1654ced6f944c7e17ed7aa092c38f5dbb2f7176a" class="src_link" title="spec/booking_spec.rb">spec/booking_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>69</td>
+        <td>83</td>
         <td>18</td>
         <td>18</td>
         <td>0</td>
@@ -246,91 +236,6 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="e13d727152dd3514865544dc04e0917273601b3e">
-  <div class="header">
-    <h3>app/lib/booking.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">require &#39;active_record&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">require &#39;pg&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">ActiveRecord::Base.establish_connection(</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">  adapter: &#39;postgresql&#39;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">  database: ENV[&#39;database&#39;],</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">  host: &#39;localhost&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class Booking &lt; ActiveRecord::Base</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
         <div class="source_table" id="1654ced6f944c7e17ed7aa092c38f5dbb2f7176a">
   <div class="header">
     <h3>spec/booking_spec.rb</h3>
@@ -387,373 +292,457 @@
           <code class="ruby">describe Booking do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">before(:each) do</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="10">
           <span class="hits">3</span>
           
           <code class="ruby">  User.create(</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">    username: &quot;MakersPerson&quot;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">    email:&quot;Awesome@aol.com&quot;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">    pass_hash: &quot;DoesntKnow&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">  )</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="14">
+        <li class="covered" data-hits="3" data-linenumber="15">
           <span class="hits">3</span>
           
           <code class="ruby">  Space.create(</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">    space_name: &quot;Makers&quot;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">    description:&quot;Awesome&quot;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">    price: 25.00,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">    owner_id: User.find_by(username: &quot;MakersPerson&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">  )</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
           <code class="ruby">  it &#39;can make a booking&#39;do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">  booking = Booking.new(</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">    user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">    space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">    booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
+          <code class="ruby">    user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">  )</code>
+          <code class="ruby">    space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">    booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
+          <code class="ruby">  )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">  it &#39;can persist a booking object&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">    new_table_row = Booking.create(</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">      user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">      space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">      booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">    )</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(Booking.all).to include(new_table_row)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
-          
-          <code class="ruby">it &#39;can make a booking when spaces is available (no date conflict)&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  new_table_row = Booking.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">    user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
+          <code class="ruby">  # it &#39;checks if a booking exists and returns true or false&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">    space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
+          <code class="ruby">  #   Booking.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">    booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
+          <code class="ruby">  #     user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">  )</code>
+          <code class="ruby">  #     space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="44">
           
-          <code class="ruby">  second_table_row = Booking.create(</code>
+          
+          <code class="ruby">  #     booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">    user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
+          <code class="ruby">  #   )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">    space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
+          <code class="ruby">  #   date = Time.parse(&quot;14/02/2019&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">    booking_date: Time.parse(&quot;14/05/2019&quot;)</code>
+          <code class="ruby">  #   date1 = Time.parse(&quot;14/03/2019&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">  )</code>
+          <code class="ruby">  #   expect(Booking.available?(Space.find_by(space_name: &quot;Makers&quot;).id, date)).to eq(false)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="49">
           
-          <code class="ruby">  expect(</code>
+          
+          <code class="ruby">  #   expect(Booking.available?(Space.find_by(space_name: &quot;Makers&quot;).id, date1)).to eq(true)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">      Booking.where(&quot;space_id = ? AND booking_date = ?&quot;, Space.find_by(space_name: &quot;Makers&quot;).id, &quot;2019-05-14&quot;)</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    ).not_to eq([])</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">end</code>
+          <code class="ruby">it &#39;can make a booking when spaces is available (no date conflict)&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#</code>
+          <code class="ruby">  new_table_row = Booking.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby"># it &#39;throws an error if space is unavailable on date&#39; do</code>
+          <code class="ruby">    user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">#   new_table_row = Booking.create(</code>
+          <code class="ruby">    space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">#     user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
+          <code class="ruby">    booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">#     space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
+          <code class="ruby">  )</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
+          <code class="ruby">  second_table_row = Booking.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby">#   )</code>
+          <code class="ruby">    user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby">#   expect {</code>
+          <code class="ruby">    space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">#     Booking.create(</code>
+          <code class="ruby">    booking_date: Time.parse(&quot;14/05/2019&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">#       user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
+          <code class="ruby">  )</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#       space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
+          <code class="ruby">  expect(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">#       booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
+          <code class="ruby">      Booking.where(&quot;space_id = ? AND booking_date = ?&quot;, Space.find_by(space_name: &quot;Makers&quot;).id, &quot;2019-05-14&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">#     )</code>
+          <code class="ruby">    ).not_to eq([])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">#   }.to raise_error()</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby"># end</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby"></code>
+          <code class="ruby"># it &#39;throws an error if space is unavailable on date&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">#   new_table_row = Booking.create(</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">#     user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">#     space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">#     booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">#   )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">#   expect {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">#     Booking.create(</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">#       user_id: User.find_by(username: &quot;MakersPerson&quot;).id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">#       space_id: Space.find_by(space_name: &quot;Makers&quot;).id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">#       booking_date: Time.parse(&quot;14/02/2019&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">#     )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">#   }.to raise_error()</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby"># end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
           
           
           <code class="ruby">end</code>
@@ -1772,7 +1761,7 @@
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">  expect(page).to have_content (&#39;Booked&#39;)</code>
+          <code class="ruby">  expect(page).to have_content (&#39;My Bookings:&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">

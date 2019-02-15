@@ -9,8 +9,4 @@ ActiveRecord::Base.establish_connection(
 
 class Booking < ActiveRecord::Base
 
-  def self.available?(space_id, date)
-    self.where("space_id = ? AND booking_date = ?", space_id, date).first == nil
-  end
-
 end

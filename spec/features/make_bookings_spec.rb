@@ -17,7 +17,7 @@ scenario 'user can book an advertised space' do
 
   fill_in('booking_date', with: '2019-02-14')
   click_button('Book')
-  expect(page).to have_content ('Booked')
+  expect(page).to have_content ('My Bookings:')
 
 end
 end

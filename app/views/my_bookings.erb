@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Makers BnB</title>
+  </head>
+
+  <body>
+  <header>
+    <h1 My Bookings:</h1>
+  </header>
+  <ul>
+  <% @bookings.each { |booking| %>
+    <li>
+      <h3><%= booking.space_id %></h3>
+      <p><%= booking.booking_date %></p>
+      </li>
+  </ul>
+      <% } %>
+  </body>
+</html>

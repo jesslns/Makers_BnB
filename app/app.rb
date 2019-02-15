@@ -4,8 +4,10 @@ require 'sinatra/base'
 require 'sinatra/flash'
 require_relative './lib/space.rb'
 require_relative './lib/user.rb'
+require_relative './lib/booking.rb'
 require_relative './lib/hashHandler.rb'
 require_relative './lib/anonymousHandler.rb'
+require_relative './lib/check_booking.rb'
 
 class MakersBnB < Sinatra::Base
   enable :sessions, :method_override
@@ -92,11 +94,19 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/booking' do
+    booking_available?(1, params[:booking_date])
+    Booking.create(
+      user_id: session['user'].id,
+      space_id: 1,
+      booking_date: params[:booking_date]
+    )
     redirect('/my-bookings')
   end
 
   get '/my-bookings' do
-    'Booked'
+    bootAnon
+    @bookings = Booking.where(user_id: session['user'].id)
+    erb :my_bookings
   end
 
   run! if app_file == $0

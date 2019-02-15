@@ -9,16 +9,28 @@
   </head>
 
   <body>
-  <header>
-    <h1 My Bookings:</h1>
-  </header>
-  <ul>
-  <% @bookings.each { |booking| %>
-    <li>
-      <h3><%= booking.space_id %></h3>
-      <p><%= booking.booking_date %></p>
-      </li>
-  </ul>
-      <% } %>
-  </body>
-</html>
+    <header>
+      <h1 class="logo">MakersBnB </h1>
+      </header>
+      <form action="/" >
+        <button type="submit">Home</button>
+      </form>
+      <form action="/session" method="post">
+        <input type="hidden" name="_method" value='DELETE'>
+        <button type="submit">Logout</button>
+      </form>
+
+      <h1>My Bookings:</h1>
+      <ul>
+        <% @bookings.each { |booking| %>
+          <div class = 'container'>
+            <li>
+              <h2>Check-in Date: <%= booking.booking_date %></h2>
+              <img src="https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food" alt="">
+              <p>Space  ID: <%= booking.space_id %></p>
+            </li>
+            </div>
+            <% } %>
+          </ul>
+        </body>
+        </html>

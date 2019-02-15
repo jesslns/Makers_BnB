@@ -23,6 +23,9 @@
   <% if @user != nil %>
   Hi <%= @user.username %>!
 <br>
+<form action="/my-bookings" >
+  <button type="submit">My Bookings</button>
+</form>
 <form action="/my-spaces" >
   <button type="submit">My Spaces</button>
 </form>
@@ -45,7 +48,7 @@
             <p>£ <%= space.price %> / night</p>
           <img src="https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food" alt="">
           <p>Description: <%= space.description %></p>
-          <form action="/booking" method="post">
+          <form action="/booking/<%= space.id %>" method="post">
             Booking Date: <input type="text" name="booking_date"/>
             <button type="submit">Book</button>
             </form>

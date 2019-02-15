@@ -93,11 +93,12 @@ class MakersBnB < Sinatra::Base
     redirect '/my-spaces'
   end
 
-  post '/booking' do
-    booking_available?(1, params[:booking_date])
+  post '/booking/:id' do
+    @space_id = params[:id]
+    booking_available?(@space_id, params[:booking_date])
     Booking.create(
       user_id: session['user'].id,
-      space_id: 1,
+      space_id: @space_id,
       booking_date: params[:booking_date]
     )
     redirect('/my-bookings')

@@ -12,6 +12,11 @@ class MakersBnB < Sinatra::Base
   get '/' do
     @user = session['user']
     @spaces = Space.all
+    @all_users = User.all
+    @space_owners = {}
+    @spaces.each do |space|
+      @space_owners[space] = @all_users.find(space.owner_id).username
+    end 
     erb :index
   end
 

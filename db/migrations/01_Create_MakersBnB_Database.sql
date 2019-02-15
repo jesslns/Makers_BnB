@@ -1,4 +1,4 @@
-TRUNCATE users, spaces, bookings RESTART IDENTITY;
+TRUNCATE users, spaces, bookings, requests RESTART IDENTITY;
 
 DROP TABLE spaces;
 DROP TABLE users;
@@ -28,3 +28,17 @@ CREATE TABLE bookings (
   FOREIGN KEY (user_id) REFERENCES users (id),
   booking_date DATE NOT NULL
 );
+
+CREATE TABLE requests (
+  id SERIAL PRIMARY KEY,
+  space_id INTEGER,
+  FOREIGN KEY (space_id) REFERENCES spaces (id),
+  user_id INTEGER,
+  FOREIGN KEY (user_id) REFERENCES users (id),
+  booking_date DATE NOT NULL
+);
+
+ALTER TABLE requests ADD COLUMN request_status VARCHAR(10);
+ALTER TABLE requests ALTER COLUMN request_status
+SET DEFAULT '_pending';
+ALTER TABLE requests ADD CHECK (request_status IN ('_pending', '_approved', '_rejected'));

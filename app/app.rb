@@ -3,6 +3,7 @@ ENV['database'] ||= 'MakersBnB'
 require 'sinatra/base'
 require 'sinatra/flash'
 require_relative './lib/space.rb'
+require_relative './lib/request.rb'
 require_relative './lib/user.rb'
 require_relative './lib/hashHandler.rb'
 require_relative './lib/anonymousHandler.rb'
@@ -91,5 +92,16 @@ class MakersBnB < Sinatra::Base
     redirect '/my-spaces'
   end
 
+  post '/request-space/:id' do
+    if Booking.available?(space_id: params[:id], date: params[:date])
+      @user_id = session['user'].id
+      Request.create(space_id: params[:id], user_id: @user_id, booking_date: params[:date])
+      redirect '/success' #coming soon
+    else
+      redirect '/failure'# coming soon
+    end
+  end
+
   run! if app_file == $0
 end
+

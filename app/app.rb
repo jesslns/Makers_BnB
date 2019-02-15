@@ -24,6 +24,13 @@ class MakersBnB < Sinatra::Base
     erb :my_spaces
   end
 
+  get '/space-booker' do
+    # bootAnon
+    @user = session['user']
+    @space = Space.find(params[:space_id])
+    erb :space_booker
+  end
+
   get '/space-creator' do
     bootAnon
     @user = session['user']

@@ -28,7 +28,11 @@
       
         <% @spaces.each { |space| %>
           <div class = 'display_space'>
-              <h4><%= space.space_name %></h4>
+              <h4><%= space.space_name %>     </h4>
+              <form action = "/space-booker">
+              <input type="hidden" name="space_id" value="<%=space.id%>">
+              <input type="submit" value="Book Now">
+              </form>
               <h5>Offered by <%= @space_owners[space] %> at £ <%= space.price %> / night</h5>
               <img src="https://source.unsplash.com/540x360?livingroom,kitchen,bedroom,food" alt="">
               <h5><%= space.description %></h5>

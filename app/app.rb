@@ -6,12 +6,14 @@ require_relative './lib/space.rb'
 require_relative './lib/user.rb'
 require_relative './lib/hashHandler.rb'
 require_relative './lib/anonymousHandler.rb'
+require_relative './lib/space_owner_helper.rb'
 
 class MakersBnB < Sinatra::Base
   enable :sessions, :method_override
   get '/' do
     @user = session['user']
     @spaces = Space.all
+    get_space_owners
     erb :index
   end
 
@@ -20,6 +22,13 @@ class MakersBnB < Sinatra::Base
     @user = session['user']
     @spaces = Space.where(owner_id: session['user'].id)
     erb :my_spaces
+  end
+
+  get '/space-booker' do
+    # bootAnon
+    @user = session['user']
+    @space = Space.find(params[:space_id])
+    erb :space_booker
   end
 
   get '/space-creator' do

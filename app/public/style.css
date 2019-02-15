@@ -5,7 +5,7 @@
 
 body{
   background-color: white;
-  color: #263238;
+  color: red;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 0;
@@ -53,6 +53,15 @@ ul, li {
   background: rgba(255, 255, 255, 0.7);
   max-width: 800px;
   margin: auto;
+}
+
+.display_space {
+  align: left;
+  background-color: #AED6F1;
+  color: rgb(11, 65, 65);
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  height: 500px;
 }
 
 #navbar {

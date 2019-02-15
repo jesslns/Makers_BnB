@@ -11,8 +11,8 @@
 <%= erb(:navbar) %>
 <div id="splashimage">
   <div id="splashtext">
-    <h1> Thundercats are GO! </h1>
-    <p>and we're taking you with us</p>
+    <h1> Thundercats are GO! Wario!!</h1>
+    <p>and we're taking you with us   Wario!!</p>
   </div>
   <div id="splashcover">
     <div><br>
@@ -24,14 +24,20 @@
 
   <div class = 'container'>
     <ul>
-      <% @spaces.each { |space| %>
-        <li>
-          <h5><%= space.space_name %></h5>
-            <p>£ <%= space.price %> / night</p>
-          <img src="https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food" alt="">
-          <p>Description: <%= space.description %></p>
-        </li>
-        <% } %>
+
+        <% @spaces.each { |space| %>
+          <div class = 'display_space'>
+              <h4><%= space.space_name %>     </h4>
+              <form action = "/space-booker">
+              <input type="hidden" name="space_id" value="<%=space.id%>">
+              <input type="submit" value="Book Now">
+              </form>
+              <h5>Offered by <%= @space_owners[space] %> at £ <%= space.price %> / night</h5>
+              <img src="https://source.unsplash.com/540x360?livingroom,kitchen,bedroom,food" alt="">
+              <h5><%= space.description %></h5>
+          </div>
+          <% } %>
+
       </ul>
     </div>
 

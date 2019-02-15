@@ -9,21 +9,42 @@
 </head>
 <body>
   <%= erb(:navbar) %>
-  <h2>Post a new space</h2>
-
-  <form action="/space" method="post">
-    <label for="spacename">Title</label>
-    <input name="spacename" type="text" placeholder="Name" />
-    <label for="price">Price</label>
-    <input name="price" type="text" placeholder="Price" />
-    <br>
-    <!-- <label for="description">Description</label> -->
-    <br>
-    <textarea rows="10" cols="100" name="description" placeholder="Add a description of your space here" ></textarea>
-    <!-- <input type="submit" value="Submit" /> -->
-    <br>
-    <button type = "submit">Submit</button>
-  </form>
+  <div style="height: 30px;"></div>
+  <div class="write_space" align="center">
+    <div class="title">
+      <h1> post a new space </h1>
+    </div>
+    <form action="/space" method="post">
+      <div class="space_name_holder">
+        <div class="contents">
+          <h3>space name</h3>
+          <input name="spacename" type="text" placeholder="type your space name" class="input_field"/>
+          <hr>
+        </div>
+      </div>
+      <div class="price_holder">
+        <div class="contents">
+          <h3>price<small><small><small>per person per night</small></small></small></small></small></h3>
+          <input name="price" type="text" placeholder="name your price" class="input_field"/>
+          <hr class="price_bar">
+        </div>
+      </div>
+      <br>
+      <!-- <label for="description">Description</label> -->
+      <br>
+      <div class="description_holder">
+        <div class="contents">
+          <h3> space description </h3>
+          <br><textarea class="space_description" rows="10" cols="100" name="description" placeholder="Add a description of your space here" ></textarea>
+        </div>
+      </div>
+      <div class="submit_holder">
+        <!-- <input type="submit" value="Submit" /> -->
+        <br>
+        <button type = "submit" class="submit_space">Submit</button>
+      </div>
+    </form>
+  </div>
 
 
 </body>

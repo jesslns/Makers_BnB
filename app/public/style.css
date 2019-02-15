@@ -408,3 +408,118 @@ hr {
 .space-bookings {
   margin-top: 10px;
 }
+
+.write_space {
+  overflow: hidden;
+  vertical-align: bottom;
+  display: inline-block;
+  text-align: left;
+  height: 470px;
+  width: 800px;
+  border: solid 1px lightgray;
+  border-radius: 15px;
+}
+
+.write_space:hover {
+  transition: 0.3s;
+  border: solid 1px gray;
+}
+
+.write_space .space_name_holder {
+  position: relative;
+  text-align: left;
+  vertical-align: bottom;
+  height: 100px;
+}
+
+.write_space .price_holder {
+  position: relative;
+  text-align: left;
+  vertical-align: bottom;
+  height: 40px;
+}
+
+.write_space .description_holder {
+  position: relative;
+  text-align: left;
+  vertical-align: bottom;
+  height: 180px;
+}
+
+.write_space .contents {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.contents textarea {
+  margin-left: 40px;
+  width: 500px;
+  height: 180px;
+  border: 0px;
+  font-style: italic;
+  margin-left:
+}
+
+.contents h3{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.contents h3 small{
+  margin-left: 3px;
+  color: grey;
+}
+
+.contents .input_field{
+  width: 200px;
+  border: 0px;
+  font-style: italic;
+}
+
+.write_space .price_holder {
+}
+
+.write_space .title {
+  color: grey;
+  margin-top: 10px;
+  width: 95%;
+  text-align: right;
+}
+
+.write_space:hover .title {
+  transition: 0.3s;
+  color: #263238;
+}
+
+
+
+
+.write_space .submit_holder {
+  text-align: center;
+  vertical-align: baseline;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+}
+
+
+.write_space .submit_holder:hover {
+  transition: 0.3s;
+  height: 70px;
+  background-color: #FF5733;
+  color: white;
+}
+
+.write_space .submit_holder .submit_space{
+  background: transparent;
+}
+
+.write_space .submit_holder .submit_space:hover {
+  transition: 0.2s;
+  color: #FF5733;
+  background: white;
+}
